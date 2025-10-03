@@ -1,3 +1,7 @@
+:root {
+    --side-bar-color: #248f8f;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +20,7 @@ body {
     width: 1440px;
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 4.5fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
 
 }
 
@@ -25,10 +29,22 @@ body {
     grid-row-end: 3;
     display: grid;
     grid-template-rows: minmax(80px,1fr) minmax(200px,3fr) 5fr;
+    background-color: var(--side-bar-color);
 }
 
 .topPart {
-    background-color: red;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.topSection {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.bottomSection {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .mainPortion {
