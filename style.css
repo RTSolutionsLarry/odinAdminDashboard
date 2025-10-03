@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.appWrapper {
+    height: 100vh;
+    width: 1440px;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 4.5fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.sidebar {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: minmax(80px,1fr) minmax(200px,3fr) 5fr;
+}
+
+.topPart {
+    background-color: red;
+}
+
+.mainPortion {
+    background-color: green;
+}
