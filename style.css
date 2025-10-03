@@ -1,5 +1,6 @@
 :root {
     --side-bar-color: #248f8f;
+    --light-font-color: #fff;
 }
 
 * {
@@ -7,7 +8,7 @@
     margin: 0;
     border: 0;
     padding: 0;
-    border: 1px solid black;
+    font-family: Verdana, sans-serif;
 }
 
 body {
@@ -65,4 +66,24 @@ body {
     grid-row-end: 5;    
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+.navItem,
+.header {
+    padding: 9px;
+    color: var(--light-font-color);
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+
+.navItem h3 {
+    margin-left: 20px;
+}
+
+.icon {
+    color: white;
+}
+
+svg {
+    fill: currentColor;
 }
