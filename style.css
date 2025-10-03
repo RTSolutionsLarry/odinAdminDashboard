@@ -48,5 +48,21 @@ body {
 }
 
 .mainPortion {
-    background-color: green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 9fr 1fr 9fr;
+}
+
+.projectSectionHeader {
+    grid-row-start: 1;
+    grid-row-end: 2;    
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.projectSection {
+    grid-row-start: 2;
+    grid-row-end: 5;    
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
