@@ -201,16 +201,21 @@ body {
 }
 
 .projectBox {
-    border: 1px solid black;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .4fr 12fr;
     grid-template-rows: 1fr;
-    background-color: var(--light-background-color);
+    box-shadow: 2px 2px 1px gray;
 }
 
-.orangeSlice {
+.orangeslice {
     background-color: orange;
+    border-radius: 10px 0 0 10px;
+}
+
+.mainBox {
+    background-color: var(--light-background-color);
+    border-radius: 0 10px 10px 0;
 }
 
 .announcementSectionHeader,
