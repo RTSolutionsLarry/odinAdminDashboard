@@ -1,6 +1,8 @@
 :root {
-    --side-bar-color: #248f8f;
+    --side-bar-color: #4296EB;
     --light-font-color: #fff;
+    --main-portion-color: #D1DBE6;
+    --light-background-color: #FAFAFA;
 }
 
 * {
@@ -22,7 +24,7 @@ body {
     width: 1440px;
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 4.5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: .3fr 4fr;
     background-color: var(--light-font-color);
 
 }
@@ -38,6 +40,8 @@ body {
 .topPart {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    border-bottom: 1px solid gray;
+    background-color: var(--light-background-color);
 }
 
 .topSection {
@@ -47,7 +51,7 @@ body {
 
 .leftTopSection {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     margin-top: 10px;
 }
 
@@ -76,8 +80,8 @@ body {
 .notificationIconContainer {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    padding-right: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .pfpImageContainer {
@@ -104,7 +108,7 @@ body {
 
 .usersName {
     display: flex;
-    align-items: center;
+    padding-top: 23px;
 }
 
 .bottomSection {
@@ -148,9 +152,10 @@ body {
 .mainPortion {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 9fr 1fr 9fr;
-    height: 75%;
+    grid-template-rows: 1fr 9fr 1fr 9fr 6fr;
+    height: 100%;
     padding-left: 20px;
+    background-color: var(--main-portion-color);
 }
 
 .projectSectionHeader {
@@ -177,6 +182,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    background-color: var(--light-background-color);
 }
 
 .orangeSlice {
