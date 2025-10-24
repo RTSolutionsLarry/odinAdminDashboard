@@ -216,6 +216,18 @@ body {
 .mainBox {
     background-color: var(--light-background-color);
     border-radius: 0 10px 10px 0;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+
+}
+
+.projectDescription,
+.projectIcons {
+    padding: 20px 10px 0 15px;
+}
+
+.projectMessage {
+    font-size: 14px;
 }
 
 .announcementSectionHeader,
