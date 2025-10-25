@@ -232,9 +232,7 @@ body {
 }
 
 .announcementSectionHeader,
-.announcementSection,
-.trendingSectionHeader,
-.trendingSection {
+.trendingSectionHeader {
     padding-left: 20px;
 }
 
@@ -244,6 +242,38 @@ body {
     background-color: var(--light-background-color);
     margin: 5px 80px 20px 20px;
     border-radius: 10px;
+}
+
+.accouncementCard {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announcementSection {
+    padding: 20px 0;
+}
+
+.announcements {
+    margin: 0 10% 0 10%;
+}
+
+.announcementTitle {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.announcementMessage {
+    font-size: 12px;
+}
+
+.firstAnnouncement,
+.secondAnnouncement {
+    border-bottom: 1px solid gray;
+}
+
+.secondAnnouncement,
+.thirdAnnouncement {
+    margin-top: 10px;
 }
 
 .navItem,
