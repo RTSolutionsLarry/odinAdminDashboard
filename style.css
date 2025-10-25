@@ -172,7 +172,7 @@ body {
 .mainPortion {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 9fr 1fr 9fr 6fr;
+    grid-template-rows: 1fr 10fr 1fr 9fr 6fr;
     height: 100%;
     padding: 20px 0 0 20px;
     background-color: var(--main-portion-color);
@@ -235,6 +235,14 @@ body {
 .trendingSectionHeader,
 .trendingSection {
     padding-left: 20px;
+}
+
+.announcementSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--light-background-color);
+    margin: 0 80px 20px 20px;
+    border-radius: 10px;
 }
 
 .navItem,
