@@ -19,6 +19,11 @@ body {
     background-color: black;
 }
 
+.dashboardTitle {
+    display: grid;
+    grid-template-columns: 1fr 5.1fr;
+}
+
 .appWrapper {
     height: 100vh;
     width: 1440px;
@@ -285,10 +290,41 @@ body {
 }
 
 .trendingCard {
-    border: 1px solid black;
     margin: 25px;
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.userSection {
+    display: grid;
     grid-template-columns: 1fr 3fr;
+}
+
+.userDetails {
+    margin: 10px 0 0 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.userHandle {
+    font-size: 13px;
+    font-weight: 700;
+    align-self: flex-end;
+}
+
+.userRole {
+    font-size: 12px;
+}
+
+.trendingPFPContainers {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    margin-top: 6px;    
 }
 
 .navItem h3 {
